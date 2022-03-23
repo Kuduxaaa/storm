@@ -878,7 +878,7 @@ def downloadsocks(choice):
 	if choice == "4":
 		f = open("socks4.txt",'wb')
 		try:
-			r = requests.get("https://api.delta-proxy.com/proxys/?type=socks4&key=gDX6He3CrkkrHXcH&limit=0",timeout=5)
+			r = requests.get("https://raw.githubusercontent.com/SPHINX110/storm/main/socks4.txt",timeout=5)
 			f.write(r.content)
 		except:
 			pass
@@ -920,27 +920,27 @@ def downloadsocks(choice):
 	if choice == "5":
 		f = open("socks5.txt",'wb')
 		try:
-			r = requests.get("https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/socks5.txt",timeout=5)
-			f.write(r.content)
-		except:
-			pass
-		try:
-			r = requests.get("https://raw.githubusercontent.com/manuGMG/proxy-365/main/SOCKS5.txt",timeout=5)
-			f.write(r.content)
-		except:
-			pass
-		try:
-			r = requests.get("https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks5&timeout=10000&country=all&simplified=true",timeout=5)
-			f.write(r.content)
-		except:
-			pass
-		try:
 			r = requests.get("https://raw.githubusercontent.com/SPHINX110/storm/main/socks5.txt",timeout=5)
 			f.write(r.content)
 		except:
 			pass
 		try:
-			r = requests.get("https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt",timeout=5)
+			r = requests.get("",timeout=5)
+			f.write(r.content)
+		except:
+			pass
+		try:
+			r = requests.get("",timeout=5)
+			f.write(r.content)
+		except:
+			pass
+		try:
+			r = requests.get("",timeout=5)
+			f.write(r.content)
+		except:
+			pass
+		try:
+			r = requests.get("",timeout=5)
 			f.write(r.content)
 			f.close()
 		except:
