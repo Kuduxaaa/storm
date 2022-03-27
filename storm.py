@@ -984,7 +984,7 @@ def main():
 	else:
 		thread_num = str(input("> ნაკადი(ავტომატურად მითითებულია=400):"))
 	if thread_num == "":
-		thread_num = int(5000)
+		thread_num = int(1000)
 	else:
 		try:
 			thread_num = int(thread_num)
