@@ -794,11 +794,6 @@ def checking(lines,socks_type,ms,rlock,):
 	global nums
 	global proxies
 	proxy = lines.strip().split(":")
-	if len(proxy) != 2:
-		rlock.acquire()
-		proxies.remove(lines)
-		rlock.release()
-		return
 	err = 0
 	while True:
 		if err >= 3:
