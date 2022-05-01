@@ -1154,6 +1154,11 @@ def downloadsocks(choice):
 		except:
 			pass
 		try:
+			r = requests.get("https://raw.githubusercontent.com/SPHINX110/storm/main/socks4.txt",timeout=5)
+			f.write(r.content)
+		except:
+			pass
+		try:
 			r = requests.get("https://api.delta-proxy.com/proxys/?type=socks4&key=gDX6He3CrkkrHXcH&limit=0",timeout=5)
 			f.write(r.content)
 		except:
@@ -1242,6 +1247,11 @@ def downloadsocks(choice):
 			pass		
 		try:
 			r = requests.get("https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt",timeout=5)
+			f.write(r.content)
+		except:
+			pass
+		try:
+			r = requests.get("https://raw.githubusercontent.com/SPHINX110/storm/main/socks5.txt",timeout=5)
 			f.write(r.content)
 		except:
 			pass
